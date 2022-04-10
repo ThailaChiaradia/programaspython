@@ -1,0 +1,52 @@
+'''
+PROGRAMA LOJA FERRAGEM
+'''
+
+continua = 'SIM'
+prego = 0.5
+parafuso = 0.75
+porca = 0.25
+ptotal = 0
+p1 = 0
+p2 = 0
+p3 = 0
+c1 = 0
+c2 = 0
+c3 = 0
+prog = 0
+
+
+while(continua == 'SIM'):
+    print("\n=====================================================================")
+    tela = int(input("Digite o número conforme o objeto desejado: \n(1) - Prego \n(2) - Parafuso \n(3) - Porca \nRESPOSTA: "))
+
+    if(tela == 1):
+        p1 = p1 + prego
+        c1 = c1 + 1
+        ptotal = ptotal + prego
+    
+    else:
+        if(tela == 2):
+           p2 = p2 + parafuso
+           c2 = c2 + 1
+           ptotal = ptotal + parafuso
+        
+        else:
+            if(tela == 3):
+                p3 = p3 + porca
+                c3 = c3 + 1
+                ptotal = ptotal + porca
+
+    prog = prog + 1        
+    
+    continua = input("\nDigite: \n(SIM) - SOLICITAR MAIS UM PRODUTO \n(NÃO) - FINALIZAR PEDIDO \nRESPOSTA: ")
+    continua = continua.upper()
+print("=====================================================================")    
+print("Número de objetos solicitados: ", prog)    
+print("Números de Pregos solicitados: ", c1)
+print("Valor total de pregos: R$", p1)
+print("Números de Parafusos solicitados: ", c2)
+print("Valor total de parafusos: R$", p2)
+print("Números de Porcas solicitadas: ", c3)
+print("Valor total de Porcas: R$", p3)
+print("Valor total da compra: R$", ptotal)

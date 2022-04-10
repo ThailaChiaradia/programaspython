@@ -1,0 +1,65 @@
+'''
+PROGRAMA LANCHERIA
+'''
+programa = 'S'
+pedido = 'C'
+vcli = 0
+vtotal = 0
+vhc = 0
+vhq = 0
+vbr = 0
+vbs = 0
+vsp = 0
+
+while(programa == 'S'):
+    print("\n--------------------------------------------------------------------------------------------------------------")
+    while(pedido =='C'):
+        hamburguer = int( input("\nHAMBÚRGUER \n(0) - Nenhum \n(1) - Carne \n(2) - Queijo\nRESPOSTA: "))
+        bebida = int(input("\nBEBIDA: \n(0) - Nenhum \n(1) - Refrigerante \n(2) - Suco \nRESPOSTA: "))
+        sobremesa = int(input("\nSOBREMESA \n(0) - Nenhum \n(1) - Pudim \n(2) - Bolacha \nRESPOSTA: "))
+       
+        if(hamburguer == 1):
+            vcli = vcli + 12
+            vtotal = vtotal + 12
+            vhc = vhc + 12
+        else:
+            if(hamburguer == 2):
+                vcli = vcli + 8
+                vtotal = vtotal + 8
+                vhq = vhq + 8
+       
+        if(bebida == 1):
+            vcli = vcli + 3.5
+            vtotal = vtotal + 3.5
+            vbr = vbr + 3.5
+        else:
+            if(bebida == 2):
+                vcli = vcli + 2.5
+                vtotal = vtotal + 2.5
+                vbs = vbs + 2.5
+       
+        if(sobremesa == 1):
+            vcli = vcli + 2.5
+            vtotal = vtotal + 2.5
+            vsp = vsp + 2.5
+       
+       
+        pedido = input("\nDeseja continuar o pedido? \n(C) - Continuar pedido \n(F) - Finalizar pedido \nRESPOSTA: ")
+        pedido = pedido.upper()
+        if(pedido == 'F'):
+            print("\nO valor total a pagar do cliente é: R$",vcli)
+            vcli = 0
+       
+    print("\n--------------------------------------------------------------------------------------------------------------")    
+    programa = input("Deseja continuar o atendimento por hoje? \n(S) - Continuar atendimento \n(N) - Finalizar atendimento \nRESPOSTA: ")
+    programa = programa.upper()
+    if(programa == 'S'):
+        pedido = 'C'
+       
+print("\n--------------------------------------------------------------------------------------------------------------")        
+print("O valor total vendido no dia: R$",vtotal)  
+print("O valor total vendido no hamburguer de carne: R$",vhc)
+print("O valor total vendido no hamburguer de queijo: R$",vhq)
+print("O valor total vendido no refrigerante: R$",vbr)
+print("O valor total vendido no suco: R$",vbs)
+print("O valor total vendido no pudim: R$",vsp)

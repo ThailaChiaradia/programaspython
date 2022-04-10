@@ -1,0 +1,163 @@
+==================================== prog 1 python =====================================
+n1 = 2
+n2 = 3
+
+soma = n1 + n2
+
+
+print("\n Soma: ", soma)
+
+
+==================================== prog 2 python =====================================
+'''
+comentario
+'''
+
+nome = input ("Digite seu nome: ")
+
+print("\n Olá", nome,"etávamos aguardando você!")
+
+
+==================================== prog 3 python =====================================
+val1 = input (" Digite o primeiro valor: ")
+val2 = input (" Digite o segundo valor: ")
+
+soma = val1 + val2
+
+print("Soma: ", soma)
+
+
+==================================== prog 4 python =====================================
+val1 = input (" Digite o primeiro valor: ")
+val2 = input (" Digite o segundo valor: ")
+
+soma = int(val1) + int(val2)
+
+print(" Soma: ", soma)
+
+
+==================================== prog 5 python =====================================
+'''
+da para trocar int por float tbm
+'''
+val1 = int(input (" Digite o primeiro valor: "))
+val2 = int(input (" Digite o segundo valor: "))
+
+soma = val1 + val2
+
+print(" Soma: ", soma)
+
+
+==================================== prog 6 python =====================================
+val1 = float(input (" Digite o primeiro valor: "))
+val2 = float(input (" Digite o segundo valor: "))
+
+soma = val1 + val2
+
+print(" Soma: ", soma)
+
+if soma > 50:
+    print("\n Participa da promoção")
+else:
+    print("\n Não participa da promoção")
+
+
+
+==================================== prog 7 python =====================================
+nome = input (" Digite o nome do aluno: ")
+val1 = float(input (" Digite o primeiro valor: "))
+val2 = float(input (" Digite o segundo valor: "))
+
+
+media = (val1 + val2)/2
+
+print(" Média: ", media)
+
+if media >= 7:
+    print("\n Aluno(a)", nome,": APROVADO")
+else:
+    print("\n Aluno(a)", nome,": REPROVADO")
+
+
+
+==================================== prog 8 python =====================================
+'''
+profissao = profissao.lower() --> trasforma toda palavra para minusculo
+profissao = profissao.upper() --> transforma toda palavra para maiusculo
+'''
+profissao = input("Digite sua profissão: ")
+profissao = profissao.upper()
+
+if profissao == 'PROFESSOR':
+    print("O usuário receberá um bônus")
+else:
+    print("O usuário não receberá bônus")
+
+
+==================================== prog 9 python =====================================
+nome1 = input("Digite o nome da pessoa 1: ")
+idade1 = int(input("Digite a idade da pessoa 1: "))
+
+nome2 = input("\nDigite o nome da pessoa 2: ")
+idade2 = int(input("Digite a idade da pessoa 2: "))
+
+if idade1 > idade2:
+    print("\nO nome da pessoa mais velha é: ", nome1)
+else:
+    print("\nO nome da pessoa mais velha é: ", nome2)
+
+
+
+==================================== prog 10 python =====================================
+nome1 = input("Digite o nome da pessoa 1: ")
+idade1 = int(input("Digite a idade da pessoa 1: "))
+
+nome2 = input("\nDigite o nome da pessoa 2: ")
+idade2 = int(input("Digite a idade da pessoa 2: "))
+
+if idade1 == idade2:
+    print("\n",nome1,"e",nome2,"tem a mesma idade")
+else:
+    if idade1 > idade2:
+        print("\nO nome da pessoa mais velha é: ", nome1)
+    else:
+        print("\nO nome da pessoa mais velha é: ", nome2)
+
+
+
+==================================== prog 11 python =====================================
+salario = float(input("Digite o valor do salário: R$"))
+
+bonus = (salario * 0.2)
+novosal = salario + bonus
+
+print("\nBonus: R$", bonus)
+print("Novo salario: R$", novosal)
+
+if novosal > 1000:
+    print("\nO colaborador não poderá mais participar do programa")
+else:
+    print("\nO colaborador poderá continuar no programa")
+
+
+
+
+==================================== prog 12 python =====================================
+
+resposta = input ("Digite a operação que deseja consultar: \n(L)Lógica de Programação \n(B)Big Data \n(J)Java \n(I)Internet das coisas \n")
+resposta = resposta.upper()
+
+if resposta == 'L':
+    print("\n(L)Lógica de Programação - 60 horas")
+else:
+    if resposta == 'B':
+        print("\n(B)Big Data - 48 horas")
+   
+    else:
+        if resposta == 'J':
+            print("\n(J)Java - 60 horas")
+        else:
+            if resposta == 'I':
+                print("\n(I)Internet das coisas - 32 horas")
+            else:
+                print("\nOpção inválida")

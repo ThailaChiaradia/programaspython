@@ -1,0 +1,165 @@
+======================================= Programa 01 Python While ===================================
+cont = 0
+
+print("\n Números de 0 a 4")
+while(cont < 5):
+
+    print("",cont)
+    cont = cont + 1
+
+
+
+
+======================================= Programa 02 Python While ===================================
+'''
+aqui ja orça ela a entrar no programa poi stá declarando que continua == 'S'
+'''
+
+continua = 'S'
+cont = 0
+while continua == 'S':
+    cont = cont + 1
+   
+    print("\n--------------------------------")
+   
+    profissao = input('Informe a profissão: ')
+    profissao = profissao.upper()
+   
+    if profissao == 'PROFESSOR':
+        print(" receber bônus")
+       
+    else:
+        print(" sem bonificação")
+   
+    continua = input("\n Digite: \n (S) - CONTINUA O PROGRAMA \n (QUALQUER OUTRA TECLA) - PARA O PROGRAMA \n ")
+    continua = continua.upper()
+   
+   
+print("\n---------------------------------------------------")
+print("\nForam realizados ", cont," inserções de profissões")
+
+
+
+
+======================================= Programa 03 Python While ===================================  
+num = 0
+acumulador = 0
+
+while (num != 99):
+   
+    num = input("\nDigite um número: ")
+    num = int(num)
+   
+    acumulador = acumulador + num
+   
+else:
+    print("\nAcumulador: ", acumulador - 99)
+
+
+
+
+
+======================================= Programa 04 Python While ===================================
+continua = 'S'
+total = 0
+
+print("--------------------------------------------------------------")
+continua = 'S'
+total = 0
+cont = 0
+
+print("--------------------------------------------------------------")
+nome = input("\nDigite o nome do vendedor: ")
+
+while (continua != 'SAIR'):
+   
+    venda = float(input ("\nDigite o valor da venda: R$"))
+   
+    total = total + venda
+    cont = cont + 1
+   
+    continua = input("\n(S) - CONTINUAR \n(SAIR) - PARAR \n ")
+    continua = continua.upper()
+
+
+print("--------------------------------------------------------------")  
+print("Valor total de vendas do vendedor",nome,": R$",total)
+print("Quantidade de vendas: ",cont)
+
+
+
+
+
+======================================= Programa 05 Python While ===================================
+continua = 'SIM'
+aprovados = 0
+reprovados = 0
+
+while(continua == 'SIM'):
+    print("----------------------------------------------------------")
+    nome = input("Digite o nome do aluno: ")
+   
+    nota1 = float(input("\nDigite a primeira nota do aluno: "))
+    nota2 = float(input("Digite a segunda nota do aluno: "))
+    media = (nota1 + nota2)/2
+   
+   
+    if(media >= 6):
+        print("\nO aluno", nome," está APROVADO")
+        aprovados = aprovados + 1
+       
+    else:
+        print("\nO aluno", nome,"está REPROVADO")
+        reprovados = reprovados + 1
+       
+   
+    print("\n--------------------------")    
+    continua = input("Digite: \n(SIM) - CONTINUAR \n(NÃO) - SAIR\n")
+    continua = continua.upper()
+   
+else:
+    print("\nNúmero de alunos aprovados: ",aprovados)
+    print("\nNúmero de alunos reprovados: ",reprovados)
+    print("\n----------------------------------------------------------")
+
+
+
+
+======================================= Programa 06 Python While ===================================
+continua = 'S'
+desenhista = 0
+analista = 0
+tarde = 0
+manha = 0
+
+
+while(continua == 'S'):
+    print("----------------------------------------------------------------------")
+    nome = input("Digite o nome do candidato: ")
+   
+    preferencia = input("Digite a preferência de turno: ")
+    preferencia = preferencia.upper()
+   
+    codigo = int(input("Escolha: \n(1) - Desenhista \n(2) - Secretária \n(3) - Psicólogo \n(4) - Médico \n(5) - Análista \n(6) - Programador \n"))
+   
+    if(codigo == 1):
+        desenhista = desenhista + 1
+   
+    else:
+        if(codigo == 5):
+            analista = analista + 1
+   
+    if(preferencia == 'TARDE'):
+        tarde = tarde + 1
+       
+    else:
+        if(preferencia == 'MANHA'):
+            manha = manha + 1
+           
+    continua = input("\nDigite: \n(S) - CONTINUAR \n(N) - SAIR \n")
+    continua = continua.upper()
+   
+print("Total inscritos para cargo de Desenhista: ",desenhista)
+print("Total de candidatos para cargop de Análista",analista)
+print("Quantidade de candidatos com preferência pelo horário da TARDE",tarde)
+print("Quantidade de candidatos com preferência pelo horário da MANHA",manha)

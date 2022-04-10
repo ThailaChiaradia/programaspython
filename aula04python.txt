@@ -1,0 +1,29 @@
+'''
+criar um código que repita a operação de leitura e acúmulo de valores
+'''
+cont = 0
+continua = 'S'
+f = 0
+m = 0
+s = 0
+
+while(continua == 'S'):
+   
+    genero = input("\nDigite o gênero do funcionário: ")
+    genero = genero.upper()
+   
+    salario = float(input("\nDigite o valor do salário do funcionário: R$"))
+    s = s + salario
+   
+    if(genero == 'FEMININO'):
+        f = f + 1
+    else:
+        if(genero =='MASCULINO'):
+            m = m + 1
+   
+    continua = input("\nDigite \n(S) - CONINUAR CADASTROS \n(N) - PARAR \nRESPOSTA: ")
+    continua = continua.upper()
+   
+print("\nO número de funcionários do gênero feminino: ", f)
+print("O número de funcionários do gênero masculino: ", m)
+print("O valor da soma total dos sálarios dos funcionários: R$", s)
